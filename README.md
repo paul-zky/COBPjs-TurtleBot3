@@ -6,6 +6,12 @@ This implementation is based on and uses code from the BPjs implementation of a 
 
 This project uses [COBPjs](https://github.com/bThink-BGU/BPjs-Context) which is based on [BPjs](https://github.com/bThink-BGU/BPjs). A BPjs tutorial can be found [here](https://bpjs.readthedocs.io/en/latest/) and an explanation of COBP is provided by this [paper](https://www.sciencedirect.com/science/article/pii/S095058492030094X). To execute JavaScript code in Java, [Mozilla Rhino](https://github.com/mozilla/rhino) is used.
 
+## Contents of this branch
+In this branch possible ways to test COBPjs applications are demonstrated. 
+The method uses additional testing B-Threads that contain assertion statements which check for errors and violations. If an assertion fails, an event listener will be notified and will cause the unit test in the host application to fail. 
+Additionally the use of the model checker of BPjs/COBPjs is demonstrated on an simplified version of the collision avoidance components.   
+
+
 ## Requirements
 This project requires:
 * [ROS with gazebo (tested with melodic)](http://wiki.ros.org/melodic/Installation)
